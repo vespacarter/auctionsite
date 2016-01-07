@@ -1,0 +1,24 @@
+<div class="main-title"><h1> Welcome to my Auction Site </h1></div>
+<div class="display-title"><h4> Users: </h4></div>
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<% counter = 0 %>
+		<div class="row">
+	<% @users.each do |user| %>
+		<div class="col-md-4 square-item">
+		<div class="item-title"><h4><b>
+		<%= link_to(user.name, user_path(user.id)) %></b></h4></div>
+		<ul class="list-unstyled item-content">
+		<li><h5><i><%= user.email %></i></h5></li>
+		<li><h6>Has <%= user.products.count %> <%= link_to("products", user_path(user.id)) %></h6></li>
+		</ul></li>
+	</div>
+	<% counter += 1 %>
+	<% if (counter % 3) == 0 %>
+		</div>
+		<br>
+		<div class="row">
+	<% end %>
+	<% end %>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+<h1> Welcome to my Auction Site </h1>
+<h4> Products for <%= @user.name %></h4>
+<ul>
+	<% @products.each do |product| %>
+		<li><h3><%= product.id %>: <b><%= link_to( product.title , product_path(product.id)) %></b></h3>
+		<!--<li><h3><%= product.id %>: <b><%= product.title %></b></h3>-->
+		<ul>
+		<li><h4><i><%= product.description %></i></h4></li>
+		<li><h5>Ends <%= product.deadline %></h5></li>
+		</ul></li>
+	<% end %>
+	<br>
+</ul>

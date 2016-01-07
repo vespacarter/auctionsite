@@ -1,0 +1,49 @@
+body {
+	/*background-image: url(http://screenprism.com/assets/img/article/gd.jpg);*/
+	background-color: #69D2E7;
+}	
+
+.app-bar{
+	font-family: 'Expletus Sans', cursive;
+	color: black;
+	font-size: 5em;
+	margin-top: 0.1em;
+}
+
+.main-title{
+	font-family: 'Expletus Sans', cursive;
+	color: black;
+	text-align: center;
+	font-size: 8em;
+}
+
+.display-title{
+	font-family: 'Expletus Sans', cursive;
+	color: black;
+	font-size: 5.5em;
+}
+
+.item-title{
+	font-family: 'Expletus Sans', cursive;
+	color: black;
+	font-size: 6em;
+}
+
+.item-content{
+	font-family: 'Expletus Sans', cursive;
+	text-align: justify;
+	color: black;
+	font-size: 5.5em;
+}
+
+.my-footer{
+	font-family: 'Expletus Sans', cursive;
+	text-align: center;
+	color: black;
+	font-size: 3em;
+}
+
+.square-item{
+	background-color: #A7DBD8;
+	border-radius: 10px;
+}

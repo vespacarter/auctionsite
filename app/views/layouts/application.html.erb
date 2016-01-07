@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auction Site</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="application.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Expletus+Sans:400,700,500' rel='stylesheet' type='text/css'>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="col-md-12 app-bar"><%= render "layouts/navbar" %></div>
+<div class="col-md-12 maincol">
+	<%= yield %>
+</div>
+<footer class="my-footer">
+	<h6>Hardly developed by Carter at Ironhack</h6>
+</footer>
+</body>
+</html>
