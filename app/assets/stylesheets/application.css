@@ -27,6 +27,7 @@ body {
 	font-family: 'Expletus Sans', cursive;
 	color: black;
 	font-size: 6em;
+
 }
 
 .item-content{
@@ -34,6 +35,8 @@ body {
 	text-align: justify;
 	color: black;
 	font-size: 5.5em;
+	background-color: #A7DBD8;
+	border-radius: 10px;
 }
 
 .my-footer{
@@ -43,7 +46,17 @@ body {
 	font-size: 3em;
 }
 
-.square-item{
-	background-color: #A7DBD8;
-	border-radius: 10px;
+
+.item-text{
+	margin: 0.2em;
+}
+
+.main-image{
+	max-height: 20%;
+	max-width: 20%;
+}
+
+.detailed-image{
+	max-height: 500%;
+	max-width: 500%;
 }

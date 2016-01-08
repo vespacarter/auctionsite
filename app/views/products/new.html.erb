@@ -1,14 +1,18 @@
 <h3><%= @user.name %>: Add a product</h3>
 
-<%= form_for [@user, @product] do |f| %>
+<%= form_for [@product] do |f| %>
 	<%= f.label :title %>
 	<%= f.text_field :title %>
 	<br>
 	<%= f.label :description %>
-	<%= f.text_field :description %>	
+	<%= f.text_field :description %>
+	<br>
+	<%= f.label :pic %>
+	<%= f.text_field :pic %>	
 	<br>
 	<%= f.label :deadline %>
 	<%= f.date_field :deadline %>
+	<%= f.hidden_field :user_id, value: @user.id%>
 
-	<%= f.submit "Create" %>
+	<%= f.submit "New" %>
 <% end %>

@@ -2,11 +2,13 @@
 <% counter = 0 %>
 <div class="row">
 	<% @products.each do |product| %>
-		<div class="col-md-4 square-item">
-		<div class="item-title"><h4><b><%= link_to( product.title, product_path(product.id)) %></b></h4></div>
+		<div class="col-md-4">
+		<div class="item-title"><img src=<%=product.pic%> class="img-responsive"><h4><center><b><%= link_to( product.title, product_path(product.id)) %></b></center></h4></div>
 		<ul class="list-unstyled item-content">
+		<div class="item-text">
 		<li><h5><i><%= product.description %></i></h5></li>
 		<li><h6>Ends <%= product.deadline %></h6></li>
+		</div>
 		</ul></li>
 		</div>
 		<% counter += 1 %>

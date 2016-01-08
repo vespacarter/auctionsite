@@ -4,9 +4,12 @@
 		email: Faker::Internet.email
 	)
 	10.times do
+		producttitle = Faker::Commerce.product_name
+		productpicture = "http://lorempixel.com/500/500/technics/" + producttitle
 		u.products.create(
-			title: Faker::Commerce.product_name,
+			title: producttitle,
 			description: Faker::Lorem.paragraph,
+			pic: productpicture,
 			deadline: Faker::Time.forward(14,:evening)
 			)
 	end

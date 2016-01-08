@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151217220900) do
+ActiveRecord::Schema.define(version: 20160108103946) do
 
   create_table "biddings", force: :cascade do |t|
     t.decimal  "amount"
@@ -33,13 +33,15 @@ ActiveRecord::Schema.define(version: 20151217220900) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "user_id"
+    t.text     "pic"
   end
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "password_digest"
   end
 
 end
